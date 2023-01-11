@@ -23,7 +23,7 @@ function VanDetail() {
         onClick={goBack}
         to='..'
         relative='path'
-        className='rtn_btn inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold mb-6'
+        className='inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold mb-6'
       >
         &larr;
         <span className='ml-2'>
