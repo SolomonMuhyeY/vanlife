@@ -18,7 +18,7 @@ function VanDetail() {
   const { type, img, name, price, description } = van;
 
   return (
-    <div className='p-4 mx-12'>
+    <div className='p-4 mb-20 mx-12'>
       <NavLink
         onClick={goBack}
         to='..'
