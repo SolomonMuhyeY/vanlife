@@ -19,13 +19,20 @@ function VanDetail() {
 
   return (
     <div className='p-4 mx-12'>
-      <NavLink onClick={goBack} to='..' relative='path' className='rtn_btn'>
+      <NavLink
+        onClick={goBack}
+        to='..'
+        relative='path'
+        className='rtn_btn inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold mb-6'
+      >
         &larr;
-        <span className='ml-1'>
-          back to
+        <span className='ml-2'>
+          Back to
           <i
             className={
-              type ? `${type.toLowerCase().concat("_filter")} selected` : ""
+              type
+                ? `ml-1 ${type.toLowerCase().concat("_filter")} selected`
+                : "ml-1"
             }
           >
             {type ? ` ${type} ` : " all "}
