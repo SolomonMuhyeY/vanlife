@@ -57,7 +57,7 @@ function VanDetail() {
         )}
         <h2 className='text-2xl font-bold mb-2'>{name}</h2>
         <div className='text-xl text-gray-700 mb-4'>
-          <b>${price}</b> / day
+          <b>{price}</b>
         </div>
         <p className='text-gray-600 mb-6'>{description}</p>
         <button className='rent_btn bg-blue-500 text-white py-2 px-4 rounded'>
