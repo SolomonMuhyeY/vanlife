@@ -1,0 +1,156 @@
+b {
+  display: block;
+  font-style: italic;
+}
+.vans {
+  height: fit-content;
+  padding-bottom: 4rem;
+}
+.vans .header {
+  padding: 14px 24px;
+}
+.vans nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+.vans nav ul li {
+  background-color: rgb(240, 208, 165, 0.617);
+  padding: 4px 7px;
+  margin: 12px 14px;
+  cursor: pointer;
+}
+.vans nav ul li:last-child {
+  background: none;
+  text-decoration: underline;
+}
+.van_card_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+.van_card {
+  width: 200px;
+  margin: 16px;
+  padding: 12px;
+  background-color: #eee;
+  box-shadow: 0 0 6px #555;
+  transition: 0.5s;
+}
+.van_card a {
+  text-decoration: none;
+}
+.van_card:hover {
+  box-shadow: 0 0 12px #666;
+}
+.van_card .name_price {
+  color: #000;
+  display: flex;
+  margin: 12px 0;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 12px;
+}
+.van_card .name_price > p:hover {
+  text-decoration: underline;
+}
+.van_card a > button {
+  padding: 6px 8px;
+  border: none;
+  color: #fff;
+}
+.Luxury {
+  background-color: #f26200;
+}
+.Exotic {
+  background-color: #000;
+}
+.Leisure {
+  background-color: rgb(25, 184, 25);
+}
+.img {
+  margin: auto;
+  width: 160px;
+  height: 180px;
+  box-sizing: border-box;
+}
+.img img {
+  transition: 0.6s;
+}
+.vans .img img:hover {
+  transform: scale(1.0094);
+}
+
+/* vans-detail */
+.detail_container {
+  margin: 1rem;
+  padding-bottom: 7rem;
+}
+.van_card_detail {
+  background-color: #f0f0f0;
+  box-shadow: 1px 1px 5px #5f5f5f;
+  width: 80%;
+  justify-content: left;
+  margin: 1rem;
+  padding: 2rem;
+}
+.van_card_detail .type_btn {
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  margin: 12px 0;
+}
+.van_card_detail .img {
+  width: 100%;
+  height: 340px;
+  margin: 1rem 0;
+}
+.rtn_btn,
+.rtn_btn span {
+  display: inline-block;
+  margin: 12px;
+  margin-top: 0;
+  border: none;
+  background: none;
+  line-height: 1.4;
+  text-decoration: none;
+  color: #000;
+}
+
+.rtn_btn span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+.detail_container .rent_btn {
+  background-color: #f27600;
+  border-radius: 22px;
+  border: none;
+  padding: 10px;
+  margin: 1rem 0;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.66s;
+}
+.rent_btn:hover {
+  filter: drop-shadow(0 0 2px #f16200);
+}
+/* media-query */
+@media screen and (min-width: 678px) {
+  .van_card_detail {
+    width: 50%;
+  }
+  .detail_container {
+    margin: 1rem 4rem;
+  }
+  .van_card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+  }
+  .van_card_detail .img {
+    width: 80%;
+  }
+}

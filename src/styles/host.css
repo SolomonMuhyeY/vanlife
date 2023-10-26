@@ -1,0 +1,103 @@
+.dashboard_nav a {
+  display: inline-block;
+  margin: 2rem 1rem;
+  color: #000;
+  text-decoration: none;
+  background-color: #f1c191a8;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+.dashboard_nav a:hover,
+.host_vans_detail_card nav a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+/* host van */
+.host_van_container {
+  padding-bottom: 3rem;
+}
+.host_van_card a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0.88rem 2.5rem;
+  padding: 0.66rem 1.44rem;
+  text-decoration: none;
+  color: #000;
+  background-color: azure;
+}
+.host_van_card .img {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+.type_btn {
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  margin: 12px 0;
+}
+
+/* host vans detail */
+
+.host_vans_detail_card {
+  background-color: aliceblue;
+  padding: 2rem;
+  width: fit-content;
+  height: fit-content;
+  margin: 2rem 0.3rem;
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+.host_vans_detail_card .img {
+  margin: 0;
+  margin-right: 2rem;
+}
+.host_vans_detail_card nav a {
+  border: 0.5px solid #888;
+  margin: 0.33rem 0.63rem;
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+  color: #161616;
+  box-shadow: 0 0 8px #989;
+}
+.host_vans_detail_card nav a:hover {
+  color: red;
+}
+.img_type_name_price_cont {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0.3rem;
+}
+.current_van_detail h3 {
+  line-height: 1.6;
+}
+.current_van_detail p {
+  line-height: 1.4;
+  font-style: italic;
+  margin-top: 0.6rem;
+}
+.detail_price_photo {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 678px) {
+  .host_van_card a {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .host_vans_detail_card {
+    margin-left: 0;
+  }
+  .host_van_card a {
+    margin: 1rem;
+  }
+  .host_vans_detail_card_card {
+    display: block;
+  }
+  .img_type_name_price_cont {
+    display: block;
+  }
+}
