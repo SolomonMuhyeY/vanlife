@@ -13,7 +13,7 @@ function Vans() {
   let van_card = displayedVans.map((van) => {
     return (
       <div className='van_card' key={van.id}>
-        <Link to={`/vans/${van.id}`}>
+        <Link to={`${van.id}`}>
           <div className='img'>
             <img src={van.img} alt='van image' />
           </div>
@@ -32,19 +32,25 @@ function Vans() {
         <h2>Explore Our Van options</h2>
         <div className='filtering_btns'>
           <button
-            className='luxury_filter'
+            className={`luxury_filter ${
+              typeFilter == "luxury" ? "selected" : ""
+            }`}
             onClick={() => setSearchParams({ type: "luxury" })}
           >
             Luxury
           </button>
           <button
-            className='exotic_filter'
+            className={`exotic_filter ${
+              typeFilter === "exotic" ? "selected" : ""
+            }`}
             onClick={() => setSearchParams({ type: "exotic" })}
           >
             Exotic
           </button>
           <button
-            className='leisure_filter'
+            className={`leisure_filter ${
+              typeFilter == "leisure" ? "selected" : ""
+            }`}
             onClick={() => setSearchParams({ type: "leisure" })}
           >
             Leisure
