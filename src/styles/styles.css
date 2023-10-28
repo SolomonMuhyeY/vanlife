@@ -12,7 +12,6 @@ button {
 }
 body {
   background-color: #ded2d2;
-  height: fit-content;
 }
 /* nav-bar */
 .nav {
@@ -38,9 +37,30 @@ body {
   text-transform: uppercase;
   font-style: italic;
 }
+.avatar_icon {
+  width: 22px;
+  height: 22px;
+}
+.avatar_icon:hover {
+  filter: drop-shadow(1px 1px #242424);
+}
+/* 404 */
+.not_found {
+  width: 70%;
+  text-align: center;
+  margin: 3rem auto;
+}
+.not_found a {
+  display: inline-block;
+  background-color: #f26200;
+  color: antiquewhite;
+  padding: 8px 16px;
+  margin: 1rem;
+  border-radius: 18px;
+}
 /* home-page */
 .home_page {
-  background-image: url("../assets/twilightsky.png");
+  background-image: url("../assets/images/twilightsky.png");
   background-size: cover;
   height: calc(100vh - 54px);
   background-repeat: no-repeat;
@@ -74,7 +94,6 @@ body {
   overflow: hidden;
   text-align: center;
   color: #000;
-  height: fit-content;
 }
 .about_page .img {
   margin: 0 0 1rem 0;
@@ -136,5 +155,12 @@ footer {
   }
   .home_page button {
     width: 40%;
+  }
+  .about_page {
+    width: 60%;
+    margin: 1rem auto;
+    margin-top: 0;
+    padding: 0 0 6.6rem 0;
+    border: 2px solid #123;
   }
 }
