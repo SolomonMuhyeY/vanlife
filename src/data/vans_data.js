@@ -1,6 +1,6 @@
-import van_one from "../assets/vans/van_1.jpg";
-import van_two from "../assets/vans/van_2.jpg";
-import van_three from "../assets/vans/van_3.jpg";
+import van_one from "../assets/images/vans/van_1.jpg";
+import van_two from "../assets/images/vans/van_2.jpg";
+import van_three from "../assets/images/vans/van_3.jpg";
 
 export const vans = [
   {
