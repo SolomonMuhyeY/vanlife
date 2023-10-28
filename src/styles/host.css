@@ -44,8 +44,8 @@
 .host_vans_detail_card {
   background-color: aliceblue;
   padding: 2rem;
+  width: -moz-fit-content;
   width: fit-content;
-  height: fit-content;
   margin: 2rem 0.3rem;
   margin-top: 0;
   margin-left: 1rem;
