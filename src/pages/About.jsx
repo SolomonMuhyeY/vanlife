@@ -1,4 +1,4 @@
-import travelImage from "../assets/travel.jpg";
+import travelImage from "../assets/images/travel.jpg";
 function About() {
   return (
     <div className='about_page'>
