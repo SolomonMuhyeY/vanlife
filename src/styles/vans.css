@@ -110,7 +110,7 @@ b {
 .rtn_btn,
 .rtn_btn span {
   display: inline-block;
-  margin: 12px;
+  margin: 2px 12px;
   margin-top: 0;
   border: none;
   background: none;
@@ -138,6 +138,40 @@ b {
 .rent_btn:hover {
   filter: drop-shadow(0 0 2px #f16200);
 }
+.filtering_btns {
+  margin-left: 1rem;
+}
+.filtering_btns > button {
+  border: none;
+  margin: 1rem;
+  padding: 0.35rem 0.55rem;
+  margin-bottom: 0;
+  border-radius: 4px;
+  transition: all 1.275s ease;
+}
+
+.exotic_filter:hover,
+.exotic_filter.selected {
+  background-color: #000;
+  color: #fff;
+}
+.leisure_filter:hover,
+.leisure_filter.selected {
+  background-color: rgb(25, 184, 25);
+}
+.luxury_filter:hover,
+.luxury_filter.selected {
+  background-color: #f26200;
+  color: #fff;
+}
+.clear_filter {
+  background: none;
+}
+.clear_filter:hover {
+  text-decoration: underline;
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
 /* media-query */
 @media screen and (min-width: 678px) {
   .van_card_detail {
