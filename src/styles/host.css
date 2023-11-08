@@ -51,11 +51,14 @@
 
 .host_vans_detail_card {
   background-color: aliceblue;
-  width: 70%;
-  padding: 2rem;
-  margin-top: 0;
-  margin-left: 1rem;
-  margin: 2rem auto;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 2rem 4rem;
 }
 
 .host_vans_detail_card .img {
@@ -71,18 +74,22 @@
   box-shadow: 0 0 2px #666;
 }
 .host_vans_detail_card nav a:hover {
-  color: red;
+  color: #f26200;
 }
 .img_type_name_price_cont {
   display: flex;
   align-items: center;
   margin: 2rem 0.3rem;
 }
+.current_van_detail {
+  text-align: center;
+}
 .current_van_detail h3 {
   line-height: 1.6;
 }
 .current_van_detail p {
-  width: 70%;
+  margin: auto;
+  width: 60%;
   line-height: 1.4;
   font-style: italic;
   margin-top: 0.6rem;
