@@ -7,7 +7,7 @@ export default function HostLayout() {
     color: "#161616",
   };
   return (
-    <div>
+    <div className='host_vans'>
       <nav className='dashboard_nav'>
         <NavLink
           style={({ isActive }) => (isActive ? activeStyle : null)}
