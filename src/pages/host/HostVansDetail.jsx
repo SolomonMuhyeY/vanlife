@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
 import { Link, NavLink, Outlet, useParams } from "react-router-dom";
 import { vans } from "../../data/vans_data";
-import { useState } from "react";
 function HostVansDetail() {
   const activeStyle = {
     textDecoration: "underline",
@@ -10,7 +8,6 @@ function HostVansDetail() {
     boxShadow: "0 0 12px #333",
   };
 
-  const [expanded, setExpanded] = useState(false);
   const { id } = useParams();
   const hostVansEl = vans.map(
     (van) =>
