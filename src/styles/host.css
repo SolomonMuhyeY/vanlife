@@ -1,6 +1,6 @@
 .dashboard_nav a {
   display: inline-block;
-  margin: 2rem 1rem;
+  margin: 1rem;
   color: #000;
   text-decoration: none;
   background-color: #f1c191a8;
@@ -13,16 +13,24 @@
   font-weight: bolder;
 }
 /* host van */
+.host_vans {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .host_van_container {
   padding-bottom: 3rem;
+  width: 80%;
 }
 .host_van_card a {
   display: flex;
   justify-content: space-between;
+  box-shadow: 1px 1px 3px #000;
   align-items: center;
-  width: 80%;
-  margin: 0.88rem 2.5rem;
-  padding: 0.66rem 1.44rem;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.66rem 1rem;
   text-decoration: none;
   color: #000;
   background-color: azure;
@@ -43,12 +51,11 @@
 
 .host_vans_detail_card {
   background-color: aliceblue;
+  width: 70%;
   padding: 2rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 2rem 0.3rem;
   margin-top: 0;
   margin-left: 1rem;
+  margin: 2rem auto;
 }
 
 .host_vans_detail_card .img {
@@ -61,7 +68,7 @@
   padding: 0.2rem 1rem;
   text-decoration: none;
   color: #161616;
-  box-shadow: 0 0 8px #989;
+  box-shadow: 0 0 2px #666;
 }
 .host_vans_detail_card nav a:hover {
   color: red;
@@ -75,6 +82,7 @@
   line-height: 1.6;
 }
 .current_van_detail p {
+  width: 70%;
   line-height: 1.4;
   font-style: italic;
   margin-top: 0.6rem;
@@ -82,22 +90,18 @@
 .detail_price_photo {
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 678px) {
-  .host_van_card a {
+/* trial */
+
+@media screen and (min-width: 992px) {
+  .host_van_container {
     width: 50%;
   }
 }
-@media screen and (max-width: 468px) {
-  .host_vans_detail_card {
-    margin-left: 0;
+@media screen and (min-width: 576px) {
+  .host_van_container {
+    width: 50%;
   }
   .host_van_card a {
-    margin: 1rem;
-  }
-  .host_vans_detail_card_card {
-    display: block;
-  }
-  .img_type_name_price_cont {
-    display: block;
+    justify-content: space-around;
   }
 }
