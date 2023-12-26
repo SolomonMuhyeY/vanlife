@@ -18,7 +18,7 @@ function VanDetail() {
   const { type, img, name, price, description } = van;
 
   return (
-    <div className='detail_container p-4'>
+    <div className='p-4 mx-12'>
       <NavLink onClick={goBack} to='..' relative='path' className='rtn_btn'>
         &larr;
         <span className='ml-1'>
@@ -33,7 +33,7 @@ function VanDetail() {
           vans
         </span>
       </NavLink>
-      <div className='van_card_detail mt-6 p-6 border rounded-lg shadow-lg max-w-lg mx-auto'>
+      <div className='mt-6 p-6 border rounded-lg shadow-lg max-w-lg'>
         <div className='img mb-4'>
           <img
             src={img}
