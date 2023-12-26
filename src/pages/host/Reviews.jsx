@@ -26,7 +26,7 @@ const reviews = [
 
 function Reviews() {
   return (
-    <div className='mt-8 px-4'>
+    <div className='mt-8 mb-20 px-4'>
       <h1 className='text-3xl font-bold mb-6 text-center'>Reviews</h1>
       <div className='space-y-6'>
         {reviews.map((review) => (
