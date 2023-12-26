@@ -21,30 +21,36 @@ function VanDetail() {
     <div className='detail_container p-4'>
       <NavLink onClick={goBack} to='..' relative='path' className='rtn_btn'>
         &larr;
-        <span>
+        <span className='ml-1'>
           back to
           <i
             className={
               type ? `${type.toLowerCase().concat("_filter")} selected` : ""
             }
           >
-            {type ? type : "all"}
+            {type ? ` ${type} ` : " all "}
           </i>
           vans
         </span>
       </NavLink>
-      <div className='van_card_detail mt-6 p-6 border rounded-lg shadow-lg'>
+      <div className='van_card_detail mt-6 p-6 border rounded-lg shadow-lg max-w-lg mx-auto'>
         <div className='img mb-4'>
-          <img src={img} alt={name} className='w-full h-auto rounded-lg' />
+          <img
+            src={img}
+            alt={name}
+            className='w-full h-auto rounded-lg max-h-80 object-cover'
+          />
         </div>
         {type && (
-          <button className={`type_btn ${type.toLowerCase()} mb-4`}>
+          <button
+            className={`type_btn ${type.toLowerCase()} mb-4 py-1 px-3 rounded`}
+          >
             {type}
           </button>
         )}
         <h2 className='text-2xl font-bold mb-2'>{name}</h2>
         <div className='text-xl text-gray-700 mb-4'>
-          <b>{price}</b>
+          <b>${price}</b> / day
         </div>
         <p className='text-gray-600 mb-6'>{description}</p>
         <button className='rent_btn bg-blue-500 text-white py-2 px-4 rounded'>
