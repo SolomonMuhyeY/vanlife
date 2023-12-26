@@ -21,16 +21,15 @@ function VanDetail() {
     <div className='detail_container p-4'>
       <NavLink onClick={goBack} to='..' relative='path' className='rtn_btn'>
         &larr;
-        <span style={{ marginRight: "0" }}>
-          back to{" "}
+        <span>
+          back to
           <i
-            style={{ padding: "0 4px" }}
             className={
               type ? `${type.toLowerCase().concat("_filter")} selected` : ""
             }
           >
             {type ? type : "all"}
-          </i>{" "}
+          </i>
           vans
         </span>
       </NavLink>
@@ -45,7 +44,7 @@ function VanDetail() {
         )}
         <h2 className='text-2xl font-bold mb-2'>{name}</h2>
         <div className='text-xl text-gray-700 mb-4'>
-          <b>${price}</b> / day
+          <b>{price}</b>
         </div>
         <p className='text-gray-600 mb-6'>{description}</p>
         <button className='rent_btn bg-blue-500 text-white py-2 px-4 rounded'>
