@@ -10,11 +10,11 @@ function Vans() {
     : vans;
 
   const vanCards = displayedVans.map((van) => (
-    <div className='mb-8 bg-white' key={van.id}>
-      <Link
-        to={`${van.id}`}
-        className='block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300 h-full'
-      >
+    <div
+      className='mb-8 bg-white overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300'
+      key={van.id}
+    >
+      <Link to={`${van.id}`} className='block relative h-full'>
         <div className='aspect-w-16 aspect-h-9'>
           <img
             src={van.img}
@@ -23,7 +23,7 @@ function Vans() {
           />
         </div>
         <div className='p-4 bg-white rounded-b-lg'>
-          <div className='bg-white'>
+          <div>
             <p className='text-lg font-semibold text-gray-800'>{van.name}</p>
             <p className='text-sm text-gray-600 mt-1'>{van.price}</p>
             {van.type && (
