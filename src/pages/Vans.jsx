@@ -10,10 +10,7 @@ function Vans() {
     : vans;
 
   const vanCards = displayedVans.map((van) => (
-    <div
-      className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-8'
-      key={van.id}
-    >
+    <div className='mb-8' key={van.id}>
       <Link
         to={`${van.id}`}
         className='block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300'
@@ -80,7 +77,7 @@ function Vans() {
             </button>
           )}
         </div>
-        <div className='grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
+        <div className='grid gap-8 sm:grid-cols-2 md:grid-cols-3'>
           {vanCards}
         </div>
       </div>
