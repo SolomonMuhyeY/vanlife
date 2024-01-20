@@ -10,7 +10,7 @@ function Vans() {
     : vans;
 
   const vanCards = displayedVans.map((van) => (
-    <div className='mb-8' key={van.id}>
+    <div className='mb-8 bg-white' key={van.id}>
       <Link
         to={`${van.id}`}
         className='block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300 h-full'
