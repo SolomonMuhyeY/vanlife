@@ -18,11 +18,13 @@ function Vans() {
         to={`${van.id}`}
         className='block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300'
       >
-        <img
-          src={van.img}
-          alt='van image'
-          className='w-full h-56 object-cover rounded-t-lg'
-        />
+        <div className='aspect-w-16 aspect-h-9'>
+          <img
+            src={van.img}
+            alt='van image'
+            className='object-cover rounded-t-lg'
+          />
+        </div>
         <div className='p-4 bg-white rounded-b-lg'>
           <p className='text-lg font-semibold text-gray-800'>{van.name}</p>
           <p className='text-sm text-gray-600 mt-1'>{van.price}</p>
