@@ -1,6 +1,5 @@
-import "../styles/vans.css";
-import { vans } from "../data/vans_data";
 import { Link, useSearchParams } from "react-router-dom";
+import { vans } from "../data/vans_data";
 
 function Vans() {
   const [searchParams, setSearchParams] = useSearchParams("");
@@ -9,63 +8,71 @@ function Vans() {
   const displayedVans = typeFilter
     ? vans.filter((van) => van.type?.toLowerCase() === typeFilter)
     : vans;
-  console.log(typeFilter);
-  let van_card = displayedVans.map((van) => {
-    return (
-      <div className='van_card' key={van.id}>
-        <Link to={`${van.id}`}>
-          <div className='img'>
-            <img src={van.img} alt='van image' />
-          </div>
-          <div className='name_price'>
-            <p>{van.name}</p>
-            <p>{van.price}</p>
-          </div>
-          {van.type && <button className={van.type}>{van.type}</button>}
-        </Link>
-      </div>
-    );
-  });
+
+  const vanCards = displayedVans.map((van) => (
+    <div
+      className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4'
+      key={van.id}
+    >
+      <Link to={`${van.id}`} className='block relative overflow-hidden'>
+        <img src={van.img} alt='van image' className='w-full h-auto' />
+        <div className='absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-75 text-white'>
+          <p className='text-lg font-semibold'>{van.name}</p>
+          <p className='text-sm'>{van.price}</p>
+          {van.type && (
+            <button
+              className={`mt-2 px-3 py-1 bg-${van.type.toLowerCase()}-500 text-white rounded-full`}
+            >
+              {van.type}
+            </button>
+          )}
+        </div>
+      </Link>
+    </div>
+  ));
+
   return (
-    <div className='vans'>
-      <div className='header'>
-        <h2>Explore Our Van options</h2>
-        <div className='filtering_btns'>
+    <div className='bg-gray-100'>
+      <div className='container mx-auto py-8'>
+        <div className='text-center mb-8'>
+          <h2 className='text-3xl font-semibold'>Explore Our Van Options</h2>
+        </div>
+        <div className='flex flex-wrap mb-8'>
           <button
-            className={`luxury_filter ${
-              typeFilter == "luxury" ? "selected" : ""
+            className={`mr-4 mb-4 px-4 py-2 bg-blue-500 text-white rounded ${
+              typeFilter === "luxury" ? "bg-blue-700" : ""
             }`}
             onClick={() => setSearchParams({ type: "luxury" })}
           >
             Luxury
           </button>
           <button
-            className={`exotic_filter ${
-              typeFilter === "exotic" ? "selected" : ""
+            className={`mr-4 mb-4 px-4 py-2 bg-blue-500 text-white rounded ${
+              typeFilter === "exotic" ? "bg-blue-700" : ""
             }`}
             onClick={() => setSearchParams({ type: "exotic" })}
           >
             Exotic
           </button>
           <button
-            className={`leisure_filter ${
-              typeFilter == "leisure" ? "selected" : ""
+            className={`mr-4 mb-4 px-4 py-2 bg-blue-500 text-white rounded ${
+              typeFilter === "leisure" ? "bg-blue-700" : ""
             }`}
             onClick={() => setSearchParams({ type: "leisure" })}
           >
             Leisure
           </button>
-          {typeFilter ? (
+          {typeFilter && (
             <button
-              className='clear_filter'
+              className='mr-4 mb-4 px-4 py-2 bg-gray-500 text-white rounded'
               onClick={() => setSearchParams({ type: "" })}
             >
               Clear Filters
             </button>
-          ) : null}
+          )}
         </div>
+        <div className='flex flex-wrap -mx-4'>{vanCards}</div>
       </div>
-      <div className='van_card_container'>{van_card}</div>
     </div>
   );
 }
