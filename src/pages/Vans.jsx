@@ -78,7 +78,9 @@ function Vans() {
             </button>
           )}
         </div>
-        <div className='flex flex-wrap -mx-4'>{vanCards}</div>
+        <div className='grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
+          {vanCards}
+        </div>
       </div>
     </div>
   );
