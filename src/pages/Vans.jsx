@@ -13,13 +13,13 @@ function Vans() {
     <div className='mb-8' key={van.id}>
       <Link
         to={`${van.id}`}
-        className='block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300'
+        className='block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300 h-full'
       >
         <div className='aspect-w-16 aspect-h-9'>
           <img
             src={van.img}
             alt='van image'
-            className='object-cover rounded-t-lg'
+            className='object-cover rounded-t-lg h-full'
           />
         </div>
         <div className='p-4 bg-white rounded-b-lg'>
