@@ -23,15 +23,17 @@ function Vans() {
           />
         </div>
         <div className='p-4 bg-white rounded-b-lg'>
-          <p className='text-lg font-semibold text-gray-800'>{van.name}</p>
-          <p className='text-sm text-gray-600 mt-1'>{van.price}</p>
-          {van.type && (
-            <button
-              className={`mt-2 px-3 py-1 bg-${van.type.toLowerCase()}-500 text-white rounded-full`}
-            >
-              {van.type}
-            </button>
-          )}
+          <div className='bg-white'>
+            <p className='text-lg font-semibold text-gray-800'>{van.name}</p>
+            <p className='text-sm text-gray-600 mt-1'>{van.price}</p>
+            {van.type && (
+              <button
+                className={`mt-2 px-3 py-1 bg-${van.type.toLowerCase()}-500 text-white rounded-full`}
+              >
+                {van.type}
+              </button>
+            )}
+          </div>
         </div>
       </Link>
     </div>
