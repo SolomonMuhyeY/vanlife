@@ -75,32 +75,6 @@ body {
 .home_page {
   background-image: url("../assets/images/twilightsky.png");
   background-size: cover;
-  height: calc(100vh - 54px);
-  background-repeat: no-repeat;
-  color: #fff;
-  text-align: center;
-  padding: 14px 44px;
-}
-.home_page h2 {
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  padding: 2rem;
-  line-height: 1.4;
-}
-.home_page button {
-  width: 95%;
-  padding: 12px;
-  border-radius: 22px;
-  border: none;
-  margin: 3rem 0;
-  color: #fff;
-  background-color: #ed7e17f5;
-  cursor: pointer;
-  transition: 0.957s;
-}
-.home_page button:hover {
-  background-color: #f26200;
-  filter: drop-shadow(0 0 9px #ed8422f5);
 }
 /* about */
 .about_page {
