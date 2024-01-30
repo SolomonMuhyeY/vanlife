@@ -7,9 +7,9 @@ function NavBar() {
     color: "#f8f6f6",
   };
   return (
-    <nav className='bg-gray-800 text-white py-4 px-6 flex gap-12 items-center shadow-lg'>
+    <nav className='relative bg-gray-800 text-white py-4 px-6 flex gap-12 items-center shadow-lg'>
       <NavLink
-        className='text-base hover:text-gray-300 transition duration-300'
+        className='absolute left-1 text-base hover:text-gray-300 transition duration-300'
         style={({ isActive }) => (isActive ? activeStyle : null)}
         to='/'
       >
