@@ -42,6 +42,7 @@ function NavBar() {
         to='/login'
       >
         <img className='avatar_icon' src={avatar} alt='' />
+        Login
       </NavLink>
     </nav>
   );
