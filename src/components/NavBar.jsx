@@ -37,7 +37,7 @@ function NavBar() {
         Vans
       </NavLink>
       <NavLink
-        className='text-base hover:text-gray-300 transition duration-300'
+        className='flex gap-2 items-center text-base hover:text-gray-300 transition duration-300'
         style={({ isActive }) => (isActive ? activeStyle : null)}
         to='/login'
       >
