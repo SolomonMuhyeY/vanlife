@@ -3,7 +3,7 @@ import "../styles/login.css";
 function Login() {
   return (
     <div className='flex justify-center items-center h-screen bg-gray-100'>
-      <div className='bg-white rounded-lg shadow-md w-96'>
+      <div className='bg-white p-8 rounded-lg shadow-md w-96'>
         <h1 className='text-3xl font-semibold mb-4 text-center'>
           Sign in to your account
         </h1>
@@ -14,7 +14,7 @@ function Login() {
             </label>
             <input
               type='email'
-              className='mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+              className='mt-1 py-3 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
               placeholder='example@gmail.com'
             />
           </div>
@@ -24,7 +24,7 @@ function Login() {
             </label>
             <input
               type='password'
-              className='mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+              className='mt-1 py-3 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
               placeholder='Password'
             />
           </div>
