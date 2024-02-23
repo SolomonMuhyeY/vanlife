@@ -12,7 +12,7 @@ function Vans() {
           <img
             src={van.img}
             alt={van.name}
-            className='object-cover w-full h-full transition-transform duration-300 transform hover:scale-110'
+            className='object-cover w-full h-full transition-transform duration-300 transform'
           />
         </div>
         <div className='p-4 flex justify-between items-center text-white'>
