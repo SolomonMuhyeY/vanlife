@@ -70,7 +70,7 @@ function HostVansDetail() {
       )
   );
   return (
-    <div className='container mx-auto'>
+    <div className='container mb-20 mt-8 '>
       <Link
         to='..'
         relative='path'
