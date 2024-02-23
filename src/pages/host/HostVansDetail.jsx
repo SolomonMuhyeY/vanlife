@@ -13,10 +13,7 @@ function HostVansDetail() {
   const hostVansEl = vans.map(
     (van) =>
       id == van.id && (
-        <div
-          key={van.id}
-          className='host_vans_detail_card p-4 border rounded-lg shadow-lg bg-white my-4'
-        >
+        <div key={van.id} className='p-4 border rounded-lg shadow-lg  my-4'>
           <div className='img_type_name_price_cont flex items-center'>
             <div className='img w-32 h-32 overflow-hidden rounded-full border-2 border-gray-300'>
               <img
