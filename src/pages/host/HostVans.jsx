@@ -9,14 +9,14 @@ function Vans() {
     >
       <Link to={`${van.id}`} className='block'>
         <div className='flex flex-col justify-between gap-5'>
-          <div className='aspect-w-16 aspect-h-9'>
+          <div className='aspect-video h-44'>
             <img
               src={van.img}
               alt={van.name}
               className='object-cover w-full h-full transition-transform duration-300 transform'
             />
           </div>
-          <div className='p-4 flex items-center text-white'>
+          <div className='p-4 flex'>
             <b className='font-semibold'>{van.name}</b>
             <b className='font-semibold'>${van.price}</b>
           </div>
