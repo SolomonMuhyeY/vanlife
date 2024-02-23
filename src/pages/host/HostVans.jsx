@@ -26,7 +26,7 @@ function Vans() {
   ));
 
   return (
-    <div className='py-12'>
+    <div className='py-24'>
       <div className='container mx-auto'>
         <h2 className='text-4xl font-bold text-center mb-12 text-gray-800'>
           Discover Your Perfect Van
