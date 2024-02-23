@@ -41,7 +41,7 @@ function HostVansDetail() {
               <b className='text-xl text-green-600'>${van.price}/day</b>
             </div>
           </div>
-          <nav className='detail_price_photo mt-4 flex space-x-4'>
+          <nav className='mt-4 flex space-x-4'>
             <NavLink
               style={({ isActive }) => (isActive ? activeStyle : null)}
               to={`/host/vans/${van.id}`}
