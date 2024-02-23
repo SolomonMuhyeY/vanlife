@@ -73,7 +73,7 @@ function HostVansDetail() {
   );
 
   return (
-    <div className='container mb-20 mt-8'>
+    <div className='container py-8 mb-20 mt-8'>
       <Link
         to='..'
         relative='path'
