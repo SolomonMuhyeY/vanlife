@@ -38,7 +38,7 @@ function HostVansDetail() {
               <p className='mt-2 text-lg font-semibold'>
                 <b>{van.name}</b>
               </p>
-              <b className='text-xl text-green-600'>${van.price}/day</b>
+              <b className='text-xl text-green-600'>{van.price}</b>
             </div>
           </div>
           <nav className='mt-4 flex space-x-4'>
