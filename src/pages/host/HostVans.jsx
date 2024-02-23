@@ -8,16 +8,18 @@ function Vans() {
       className='rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105'
     >
       <Link to={`${van.id}`} className='block'>
-        <div className='aspect-w-16 aspect-h-9'>
-          <img
-            src={van.img}
-            alt={van.name}
-            className='object-cover w-full h-full transition-transform duration-300 transform'
-          />
-        </div>
-        <div className='p-4 flex justify-between items-center text-white'>
-          <b className='text-lg font-semibold'>{van.name}</b>
-          <b className='text-lg font-semibold'>${van.price}</b>
+        <div className='flex flex-col justify-between gap-5'>
+          <div className='aspect-w-16 aspect-h-9'>
+            <img
+              src={van.img}
+              alt={van.name}
+              className='object-cover w-full h-full transition-transform duration-300 transform'
+            />
+          </div>
+          <div className='p-4 flex items-center text-white'>
+            <b className='font-semibold'>{van.name}</b>
+            <b className='font-semibold'>${van.price}</b>
+          </div>
         </div>
       </Link>
     </div>
