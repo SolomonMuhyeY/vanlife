@@ -31,7 +31,7 @@ function Vans() {
         <h2 className='text-4xl font-bold text-center mb-12 text-gray-800'>
           Discover Your Perfect Van
         </h2>
-        <div className='grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+        <div className='grid gap-8 sm:grid-cols-2 md:grid-cols-3'>
           {hostVan}
         </div>
       </div>
