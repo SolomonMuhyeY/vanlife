@@ -17,7 +17,7 @@ function HostVansDetail() {
           key={van.id}
           className='p-4 border rounded-lg shadow-lg my-4 bg-white'
         >
-          <div className='img_type_name_price_cont flex items-center'>
+          <div className='flex'>
             <div className='img w-32 h-32 overflow-hidden rounded-full border-2 border-gray-300'>
               <img
                 src={van.img}
@@ -65,7 +65,9 @@ function HostVansDetail() {
               Photos
             </NavLink>
           </nav>
-          <Outlet context={{ van }} />
+          <div className='text-left'>
+            <Outlet context={{ van }} />
+          </div>
         </div>
       )
   );
