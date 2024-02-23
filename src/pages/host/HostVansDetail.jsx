@@ -70,14 +70,7 @@ function HostVansDetail() {
       )
   );
   return (
-    <div
-      style={{
-        padding: "0 1rem",
-        paddingBottom: "2rem",
-        width: "fit-content",
-      }}
-      className='container mx-auto'
-    >
+    <div className='container mx-auto'>
       <Link
         to='..'
         relative='path'
